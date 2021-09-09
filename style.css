@@ -1,0 +1,64 @@
+/* Countdown timer CSS */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+body{
+    background-image:url('https://images.unsplash.com/photo-1620678248066-768e17fb6117?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fG5hdHVyZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Averia Serif Libre', cursive;
+}
+h1{
+    font-size: 2rem;
+    margin-top: 3rem;
+    font-weight: normal;
+}
+@media only screen and (max-width : 350px) {
+    h1{
+        font-size: 1rem;
+    }
+}
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    
+    /* border: 2px solid black ; */
+}
+#container::before{
+    
+    background-color: black;
+    content: "";
+    height:30%;
+    width: 42%;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+    /* outline: 2px solid blue; */
+    text-align: center;
+    justify-content: center;
+}
+.big-text{
+    font-weight: bold;
+font-size: 4rem;
+margin: 1rem 2rem;
+
+}
+.coutdoun-el{
+    text-align: center;
+}
+.coutdoun-el span{
+    font-size: 1.3rem;
+}
+#seconds{
+    color: rgb(255, 196, 0);
+}
